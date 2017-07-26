@@ -1,0 +1,10 @@
+Set the script to download everyday at 7PM EST 
+*Must change directory
+
+http://www.cyberciti.biz/faq/how-do-i-add-jobs-to-cron-under-linux-or-unix-oses/
+http://superuser.com/questions/155576/linux-how-to-run-a-command-in-a-given-directory
+Edit Jobs using: crontab -e
+View existing jobs: crontab -l
+
+crontab -e 
+0 19 * * * cd /root/data; python2.7 download.py
